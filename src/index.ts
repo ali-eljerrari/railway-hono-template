@@ -7,7 +7,7 @@ app.get("/", (c) => {
   return c.json(
     {
         status: 200,
-        message: "Hello World from Hono"
+        message: "Hello World from Hono!"
     }
 );
 });

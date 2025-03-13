@@ -4,7 +4,12 @@ import { Hono } from "hono";
 const app = new Hono();
 
 app.get("/", (c) => {
-  return c.text("Hello Hono!");
+  return c.json(
+    {
+        status: 200,
+        message: "Hello World from Hono"
+    }
+);
 });
 
 const port = process.env.PORT ? Number(process.env.PORT) : 3000;
